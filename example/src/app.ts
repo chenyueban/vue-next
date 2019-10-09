@@ -1,20 +1,23 @@
 import * as Vue from 'vue'
 
 import Template from './template'
+import Reactive from './reactive'
 
 const container = document.querySelector('#root')
 
 const App = {
   components: {
-    Template
+    Template,
+    Reactive
   },
   template: `
     <div>
-      <Template :count="0" />
+      <Template :count="0" />\
+      <Reactive />
     </div>
   `
 }
 
 Vue.createApp().mount(App, container)
 
-console.log(Vue)
+console.log('Vue', Vue)

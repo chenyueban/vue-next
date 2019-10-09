@@ -1,12 +1,9 @@
 import { createComponent } from 'vue'
 
 const Template = createComponent({
-  template: `{{ count }}`,
+  template: `<div>template {{ count }}</div>`,
   props: {
     count: Number
-  },
-  setup(props) {
-    console.log(props)
   }
 })
 
